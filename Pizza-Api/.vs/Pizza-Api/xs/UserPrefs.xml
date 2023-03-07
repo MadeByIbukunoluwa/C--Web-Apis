@@ -1,29 +1,30 @@
 ﻿<Properties StartupConfiguration="{A30F8FF0-DF52-48E8-87F8-62DF4379759E}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Pizza-Api FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.ItemProperties.Pizza-Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/PizzaService.cs">
     <Files>
-      <File FileName="Program.cs" Line="29" Column="1" />
+      <File FileName="Program.cs" />
+      <File FileName="Models/Pizza.cs" />
+      <File FileName="Services/PizzaService.cs" Line="11" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Pizza-Api" expanded="True">
             <Node name="Pizza-Api" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="PizzaService.cs" selected="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
