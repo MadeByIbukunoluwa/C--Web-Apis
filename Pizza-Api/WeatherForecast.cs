@@ -1,4 +1,4 @@
-﻿namespace Pizza_Api;
+﻿namespace ContosoPizza;
 
 public class WeatherForecast
 {

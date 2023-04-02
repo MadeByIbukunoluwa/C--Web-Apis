@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Pizza-Api/Pizza-Api.csproj": {}
+    "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/Catalog.csproj": {}
   },
   "projects": {
-    "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Pizza-Api/Pizza-Api.csproj": {
+    "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Pizza-Api/Pizza-Api.csproj",
-        "projectName": "Pizza-Api",
-        "projectPath": "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Pizza-Api/Pizza-Api.csproj",
+        "projectUniqueName": "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/Catalog.csproj",
+        "projectName": "Catalog",
+        "projectPath": "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/Catalog.csproj",
         "packagesPath": "/Users/ibukunoluwaakintobi/.nuget/packages/",
-        "outputPath": "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Pizza-Api/obj/",
+        "outputPath": "/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ibukunoluwaakintobi/.nuget/NuGet/NuGet.Config"
@@ -44,7 +44,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
