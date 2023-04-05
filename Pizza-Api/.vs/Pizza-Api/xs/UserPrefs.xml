@@ -1,28 +1,38 @@
 ﻿<Properties StartupConfiguration="{A30F8FF0-DF52-48E8-87F8-62DF4379759E}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Pizza-Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/launchSettings.json">
     <Files>
-      <File FileName="Models/Pizza.cs" Line="1" Column="1" />
+      <File FileName="Models/Pizza.cs" />
       <File FileName="Program.cs" Line="25" Column="1" />
-      <File FileName="Services/PizzaService.cs" Line="6" Column="33" />
-      <File FileName="Controllers/PizzaController.cs" Line="39" Column="1" />
-      <File FileName="Controllers/WeatherForecastController.cs" Line="5" Column="16" />
-      <File FileName="WeatherForecast.cs" Line="14" Column="1" />
+      <File FileName="Services/PizzaService.cs" />
+      <File FileName="Controllers/PizzaController.cs" />
+      <File FileName="Controllers/WeatherForecastController.cs" />
+      <File FileName="WeatherForecast.cs" />
       <File FileName="appsettings.json" Line="1" Column="1" />
       <File FileName="appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Pizza-Api" expanded="True" />
+          <Node name="Pizza-Api" expanded="True">
+            <Node name="Pizza-Api" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="WeatherForecast.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Pizza-Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
