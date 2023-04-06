@@ -76,3 +76,47 @@ IEnumerable - the basic interface you can use to return a collection of items
 # Action Results
 
 When creating api endpoints , action result allows us to return more than one type from a method
+
+
+
+
+How to register and implement dependencies in.NET
+
+## How to implement Data Transfer Objects - DTOs  
+
+How to map entities to DTOs
+
+## Dependency Inversion Principle  
+
+When we have a class that depends on another class we refer to that other class as a dependency
+
+Instead of making the class that receives another class (dependency) exclusively dependent on the class it receives (the dependency) , it is going to use an interface which is where we bring in the dependency inversion principle
+So the class no longer depends on the dependency , it depends on the interface that the dependency implements
+
+By having our code depend on abstractions we are decoupling implementations from each other ti gives more freedom to move around our dependencies without ever having to touch our class this makes it easier clearer and much smoother to use
+
+We can simply go to the left of the line that we have our controller class , then click on the screwdriver icon , then when the dropdown appears we select ‘Extract interface’
+
+// Still have to do research on whether it is outdated
+<https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences>
+
+<https://learn.microsoft.com/en-gb/dotnet/core/extensions/dependency-injection-usage>
+
+## DTO(Data transfer Objects)
+
+The rate that we have created are exposing our items entity directly , we are exposing the items that we are using when dealing with persistence in the repository anytime we want to modify or remove any field in the storage , we can potentially break the contract we establish with our clients , we will introduce a DTO which is imply the contract which will be enabled between the client and our services
+
+Instead of manually converting all the endpoints to Dto type, we can create an extension method that can extend the type of the route
+
+How to Create resources with POST
+How to validate the values of DTO properties
+How to update resources with PUT
+How to delete resources with DELETE
+
+Record is a data type pretty convenient for DTOs
+
+In this scenario because the itemDto contains more properties than we need we are going to create a new DTO for the CreateItem() function that is going to be used to POST requests
+
+We can add data annotations to our DTOs to make sure that a field is required and getting the right range of values
+
+With record type method , we are creating a copy of it , but eight the two properties modified

@@ -12,7 +12,7 @@ namespace Catalog.Controllers
 {
 	[ApiController]
 	[Route("items")]
-	public class ItemsController : ControllerBase
+	public class ItemsController : ControllerBase 
 	{
 		private readonly IInMemItemsRepository repository;
 
@@ -55,6 +55,26 @@ namespace Catalog.Controllers
 				CreatedDate = DateTimeOffset.UtcNow
 			};
 			return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item.AsDTO());
+		}
+
+		[HttpPut("{id}")]
+
+		public ActionResult UpdateItem(Guid id, UpdateItemDto itemDto)
+		{
+			var existingItem = repository.GetItem(id);
+
+			if (existingItem is null)
+			{
+				return NotFound();
+			}
+			Item updatedItem = existingItem with
+			{
+				Name = itemDto.Name,
+				Price = itemDto.Price
+			};
+			repository.UpdateItem(updatedItem);
+
+			return NoContent();
 		}
     }
 }
