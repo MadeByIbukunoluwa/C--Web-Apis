@@ -16,9 +16,11 @@
   <ItemGroup>
     <None Remove="Entities\" />
     <None Remove="Repositories\" />
+    <None Remove="Dtos\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Dtos\" />
   </ItemGroup>
 </Project>
