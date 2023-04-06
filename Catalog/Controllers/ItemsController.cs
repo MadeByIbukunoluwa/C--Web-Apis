@@ -6,31 +6,42 @@ using Catalog.Entities;
 
 using Catalog.Repositories;
 
+using Catalog.Dtos;
+
 namespace Catalog.Controllers
 {
 	[ApiController]
 	[Route("items")]
 	public class ItemsController : ControllerBase
 	{
-		private readonly InMemItemsRepository repository;
+		private readonly IInMemItemsRepository repository;
 
-		public ItemsController()
+		public ItemsController(IInMemItemsRepository repository)
 		{
-			repository = new InMemItemsRepository();
+			
+			//repository = new InMemItemsRepository();
+			this.repository = repository;
 		}
+
 		//Get /items
 		[HttpGet]
-		public IEnumerable<Item> GetItems()
+		public IEnumerable<ItemDto> GetItems()
 		{
-			var items = repository.GetItems();
+			// We now convert the items we get into itemDtos
+			// for this we would use LINQ
+			var items = repository.GetItems().Select(item => item.AsDTO());
 			return items;
 		}
+
 		//GET /items/{id}
 		[HttpGet("{id}")]
-        public Item GetItem(Guid id)
+        public ActionResult<ItemDto> GetItem(Guid id)
         {
 			var item = repository.GetItem(id);
-			return item;
+
+			if (item is null) return NotFound();
+
+			return item.AsDTO();
         }
     }
 }
