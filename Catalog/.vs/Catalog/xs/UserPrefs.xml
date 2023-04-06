@@ -6,16 +6,22 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Catalog PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ItemsController.cs">
     <Files>
       <File FileName="Program.cs" Line="18" Column="1" />
-      <File FileName="WeatherForecast.cs" />
+      <File FileName="Entities/Item.cs" Line="16" Column="1" />
+      <File FileName="Repositories/InMenuItemsRepository.cs" Line="18" Column="38" />
+      <File FileName="Controllers/ItemsController.cs" Line="13" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Catalog" expanded="True">
-            <Node name="Catalog" expanded="True" />
+            <Node name="Catalog" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
