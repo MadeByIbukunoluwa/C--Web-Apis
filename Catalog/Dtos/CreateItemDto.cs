@@ -1,11 +1,11 @@
 ﻿using System;
 namespace Catalog.Dtos
 {
-	public class CreateItemDto
+	public record CreateItemDto
 	{
-		public CreateItemDto()
-		{
-		}
+		public string Name { get; init; }
+
+		public decimal Price { get; init; }
 	}
 }
 

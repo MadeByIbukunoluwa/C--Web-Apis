@@ -8,7 +8,7 @@ using Catalog.Repositories;
 
 using Catalog.Dtos;
 
-namespace Catalog.Controllers
+namespace Catalog.Controllers 
 {
 	[ApiController]
 	[Route("items")]
@@ -18,7 +18,6 @@ namespace Catalog.Controllers
 
 		public ItemsController(IInMemItemsRepository repository)
 		{
-			
 			//repository = new InMemItemsRepository();
 			this.repository = repository;
 		}
@@ -43,6 +42,20 @@ namespace Catalog.Controllers
 
 			return item.AsDTO();
         }
+
+		//POST /items/
+		[HttpPost]
+		public ActionResult<ItemDto> CreateItem(CreateItemDto itemDto)
+		{
+			Item item = new Item()
+			{
+				Id = Guid.NewGuid(),
+				Name = itemDto.Name,
+				Price = itemDto.Price,
+				CreatedDate = DateTimeOffset.UtcNow
+			};
+			return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item.AsDTO());
+		}
     }
 }
 
