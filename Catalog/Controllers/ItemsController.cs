@@ -12,7 +12,7 @@ namespace Catalog.Controllers
 {
 	[ApiController]
 	[Route("items")]
-	public class ItemsController : ControllerBase 
+	public class ItemsController : ControllerBase
 	{
 		private readonly IInMemItemsRepository repository;
 
@@ -34,14 +34,14 @@ namespace Catalog.Controllers
 
 		//GET /items/{id}
 		[HttpGet("{id}")]
-        public ActionResult<ItemDto> GetItem(Guid id)
-        {
+		public ActionResult<ItemDto> GetItem(Guid id)
+		{
 			var item = repository.GetItem(id);
 
 			if (item is null) return NotFound();
 
 			return item.AsDTO();
-        }
+		}
 
 		//POST /items/
 		[HttpPost]
@@ -73,6 +73,21 @@ namespace Catalog.Controllers
 				Price = itemDto.Price
 			};
 			repository.UpdateItem(updatedItem);
+
+			return NoContent();
+		}
+		//DELETE /items/
+		[HttpDelete("{id}")]
+
+		public ActionResult DeleteItem(Guid id)
+		{
+			var existingItem = repository.GetItem(id);
+			 
+			if (existingItem is null)
+			{
+				return NotFound();
+			}
+			repository.DeleteItem(id);
 
 			return NoContent();
 		}

@@ -27,6 +27,18 @@ namespace Catalog.Repositories
         {
             items.Add(item);
         }
+        public void UpdateItem(Item item)
+        {
+            // we find theindex of the item we are looking for , then update it 
+            var index = items.FindIndex(existingItem => existingItem.Id == item.Id);
+            // then we update the item we reassigning the item at that index 
+            items[index] = item;
+        }
+        public void DeleteItem(Guid id)
+        {
+            var index = items.FindIndex(existingItem => existingItem.Id == id);
+            items.RemoveAt(index);
+        }
     }
 }
 

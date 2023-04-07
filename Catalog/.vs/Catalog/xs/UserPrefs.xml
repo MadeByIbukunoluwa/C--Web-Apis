@@ -8,17 +8,25 @@
   <MonoDevelop.Ide.ItemProperties.Catalog PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ItemsController.cs">
     <Files>
-      <File FileName="Program.cs" Line="18" Column="1" />
+      <File FileName="Program.cs" />
       <File FileName="Entities/Item.cs" Line="16" Column="1" />
-      <File FileName="Repositories/InMenuItemsRepository.cs" Line="18" Column="38" />
-      <File FileName="Controllers/ItemsController.cs" Line="13" Column="26" />
+      <File FileName="Controllers/ItemsController.cs" Line="11" Column="31" />
+      <File FileName="Repositories/InMemItemsRepository.cs" Line="34" Column="78" />
+      <File FileName="Repositories/IInMemItemsRepository.cs" Line="13" Column="36" />
+      <File FileName="Dtos/ItemDto.cs" Line="19" Column="1" />
+      <File FileName="Extensions.cs" Line="21" Column="3" />
+      <File FileName="Dtos/CreateItemDto.cs" Line="18" Column="1" />
+      <File FileName="Dtos/UpdateItemDto.cs" Line="7" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Catalog" expanded="True">
             <Node name="Catalog" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ItemsController.cs" selected="True" />
+              </Node>
+              <Node name="Dtos" expanded="True" />
               <Node name="Entities" expanded="True" />
               <Node name="Repositories" expanded="True" />
             </Node>

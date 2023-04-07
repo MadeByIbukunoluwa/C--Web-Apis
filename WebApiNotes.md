@@ -120,3 +120,7 @@ In this scenario because the itemDto contains more properties than we need we ar
 We can add data annotations to our DTOs to make sure that a field is required and getting the right range of values
 
 With record type method , we are creating a copy of it , but eight the two properties modified
+
+## Non nullable property must contain a non null value when exiting the constructor
+
+<https://stackoverflow.com/questions/67505347/non-nullable-property-must-contain-a-non-null-value-when-exiting-constructor-co>
