@@ -134,3 +134,21 @@ With record type method , we are creating a copy of it , but eight the two prope
     - Unable to resolve service for type 'Catalog.Repositories.IInMemItemsRepository' while attempting to activate 'Catalog.Controllers.ItemsController'....
 
 You should register your dependency using the AddScoped method , here we registered the IInMemItemsRepository dependency using the AddScoped method.
+
+So this is how i registered the dependency
+    - builder.Services.AddScoped<IInMemItemsRepository, InMemItemsRepository>();
+
+
+a mongodb client is an adapter we can use to interfae with mongodb 
+
+You can see the dependencies you are using in .csproj folder 
+
+A collection is the way mongodb stores collection of entities together 
+
+Docker - simple definition - it is a standalone package of software that includes everything needed to run an application 
+
+When we run and execute a docker image, it is called a docker container 
+
+
+That docker container is going to run in the docker engine
+
