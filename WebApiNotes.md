@@ -124,3 +124,13 @@ With record type method , we are creating a copy of it , but eight the two prope
 ## Non nullable property must contain a non null value when exiting the constructor
 
 <https://stackoverflow.com/questions/67505347/non-nullable-property-must-contain-a-non-null-value-when-exiting-constructor-co>
+
+## Dependency Injection in C# ASP.Net
+
+<https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0>
+
+## if you come across an issue like this
+
+    - Unable to resolve service for type 'Catalog.Repositories.IInMemItemsRepository' while attempting to activate 'Catalog.Controllers.ItemsController'....
+
+You should register your dependency using the AddScoped method , here we registered the IInMemItemsRepository dependency using the AddScoped method.
