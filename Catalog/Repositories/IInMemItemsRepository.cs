@@ -5,14 +5,14 @@ namespace Catalog.Repositories
 {
     public interface IInMemItemsRepository
     {
-        Task GetItemAsync(Guid id);
+        Task GetItemAsync(Guid id); 
 
-        IEnumerable<Task> GetItems();
+        Task<IEnumerable<Item>> GetItemsAsync();
 
-        async CreateItem(Item item);
+        Task CreateItemAsync(Item item);
 
-        async UpdateItem(Item item);
+        Task UpdateItemAsync(Item item);
 
-        async DeleteItem(Guid id);
+        Task DeleteItemAsync(Guid id);
     }
 }

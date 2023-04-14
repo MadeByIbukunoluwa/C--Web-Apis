@@ -51,7 +51,7 @@ namespace Catalog.Controllers
 			{
 				Id = Guid.NewGuid(),
 				Name = itemDto.Name,
-				Price = itemDto.Price,
+				Price = itemDto.Price, 
 				CreatedDate = DateTimeOffset.UtcNow
 			};
 			return CreatedAtAction(nameof(GetItemAsync), new { id = item.Id }, item.AsDTO());
