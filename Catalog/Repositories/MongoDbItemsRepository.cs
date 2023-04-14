@@ -1,6 +1,10 @@
 ﻿using System;
+
 using Catalog.Entities;
+
 using MongoDB.Driver;
+
+using MongoDB.Bson;
 
 namespace Catalog.Repositories
 {
@@ -13,36 +17,41 @@ namespace Catalog.Repositories
 
         private readonly IMongoCollection<Item> itemsCollection;
 
+        private readonly FilterDefinitionBuilder<Item> filterBuilder = Builders<Item>.Filter;
 
         public MongoDbItemsRepository(IMongoClient mongoClient)
         {
             IMongoDatabase database = mongoClient.GetDatabase(databaseName);
             itemsCollection = database.GetCollection<Item>(collectionName);
         }
-        void IInMemItemsRepository.CreateItem(Item item)
+        public void CreateItem(Item item)
         {
             itemsCollection.InsertOne(item);
         }
 
-        void IInMemItemsRepository.DeleteItem(Guid id)
+        public void DeleteItem(Guid id)
         {
             throw new NotImplementedException();
 
         }
 
-        Item IInMemItemsRepository.GetItem(Guid id)
+        public Item GetItem(Guid id)
         {
-            throw new NotImplementedException();
+            var filter = filterBuilder.Eq(item => item.Id, id);
+            return itemsCollection.Find(filter).SingleOrDefault();
         }
 
-        IEnumerable<Item> IInMemItemsRepository.GetItems()
+        public IEnumerable<Item> GetItems()
         {
-            throw new NotImplementedException();
+            // Gives us the list of items in the collection 
+            return itemsCollection.Find(new BsonDocument()).ToList();
         }
 
-        void IInMemItemsRepository.UpdateItem(Item item)
+        public void UpdateItem(Item item)
         {
-            throw new NotImplementedException();
+            // we need to use a filter here too, to tell which item to update
+            var filter = filterBuilder.Eq(existingItem => existingItem.Id, item.Id);
+            itemsCollection.ReplaceOne(filter, item);
         }
     }
 }

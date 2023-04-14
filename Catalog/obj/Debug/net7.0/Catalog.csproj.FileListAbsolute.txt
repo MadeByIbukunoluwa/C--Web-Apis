@@ -31,3 +31,16 @@
 /Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/obj/Debug/net7.0/Catalog.pdb
 /Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/obj/Debug/net7.0/Catalog.genruntimeconfig.cache
 /Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/obj/Debug/net7.0/ref/Catalog.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/AWSSDK.Core.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/AWSSDK.SecurityToken.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/DnsClient.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/MongoDB.Bson.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/MongoDB.Driver.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/MongoDB.Driver.Core.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/MongoDB.Libmongocrypt.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/SharpCompress.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/Snappier.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/ZstdSharp.dll
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/runtimes/linux/native/libmongocrypt.so
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/runtimes/osx/native/libmongocrypt.dylib
+/Users/ibukunoluwaakintobi/Desktop/C-Sharp-Web-Apis/Catalog/bin/Debug/net7.0/runtimes/win/native/mongocrypt.dll
