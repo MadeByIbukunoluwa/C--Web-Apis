@@ -24,19 +24,19 @@ namespace Catalog.Controllers
 
 		//Get /items
 		[HttpGet]
-		public IEnumerable<ItemDto> GetItems()
+		public IEnumerable<ItemDto> GetItemsAsync()
 		{
 			// We now convert the items we get into itemDtos
 			// for this we would use LINQ
-			var items = repository.GetItems().Select(item => item.AsDTO());
+			var items = repository.GetItemsAsync().Select(item => item.AsDTO());
 			return items;
 		}
 
 		//GET /items/{id}
 		[HttpGet("{id}")]
-		public ActionResult<ItemDto> GetItem(Guid id)
+		public ActionResult<ItemDto> GetItemAsync(Guid id)
 		{
-			var item = repository.GetItem(id);
+			var item = repository.GetItemAsync(id);
 
 			if (item is null) return NotFound();
 
@@ -45,7 +45,7 @@ namespace Catalog.Controllers
 
 		//POST /items/
 		[HttpPost]
-		public ActionResult<ItemDto> CreateItem(CreateItemDto itemDto)
+		public ActionResult<ItemDto> CreateItemAsync(CreateItemDto itemDto)
 		{
 			Item item = new Item()
 			{
@@ -54,14 +54,14 @@ namespace Catalog.Controllers
 				Price = itemDto.Price,
 				CreatedDate = DateTimeOffset.UtcNow
 			};
-			return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item.AsDTO());
+			return CreatedAtAction(nameof(GetItemAsync), new { id = item.Id }, item.AsDTO());
 		}
 
 		[HttpPut("{id}")]
 
-		public ActionResult UpdateItem(Guid id, UpdateItemDto itemDto)
+		public ActionResult UpdateItemAsync(Guid id, UpdateItemDto itemDto)
 		{
-			var existingItem = repository.GetItem(id);
+			var existingItem = repository.GetItemAsync(id);
 
 			if (existingItem is null)
 			{
@@ -72,22 +72,22 @@ namespace Catalog.Controllers
 				Name = itemDto.Name,
 				Price = itemDto.Price
 			};
-			repository.UpdateItem(updatedItem);
+			repository.UpdateItemAsync(updatedItem);
 
 			return NoContent();
 		}
 		//DELETE /items/
 		[HttpDelete("{id}")]
 
-		public ActionResult DeleteItem(Guid id)
+		public ActionResult DeleteItemAsync(Guid id)
 		{
-			var existingItem = repository.GetItem(id);
+			var existingItem = repository.GetItemAsync(id);
 			 
 			if (existingItem is null)
 			{
 				return NotFound();
 			}
-			repository.DeleteItem(id);
+			repository.DeleteItemAsync(id);
 
 			return NoContent();
 		}

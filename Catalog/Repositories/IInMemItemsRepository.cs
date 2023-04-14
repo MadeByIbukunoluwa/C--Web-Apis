@@ -1,17 +1,18 @@
 ﻿using Catalog.Entities;
 
+
 namespace Catalog.Repositories
 {
     public interface IInMemItemsRepository
     {
-        Item GetItem(Guid id);
+        Task GetItemAsync(Guid id);
 
-        IEnumerable<Item> GetItems();
+        IEnumerable<Task> GetItems();
 
-        void CreateItem(Item item);
+        async CreateItem(Item item);
 
-        void UpdateItem(Item item);
+        async UpdateItem(Item item);
 
-        void DeleteItem(Guid id);
+        async DeleteItem(Guid id);
     }
 }

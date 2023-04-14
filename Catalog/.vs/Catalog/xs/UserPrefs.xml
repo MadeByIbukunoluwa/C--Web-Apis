@@ -1,15 +1,26 @@
 ﻿<Properties StartupConfiguration="{46170156-9212-4FF6-A498-5E5958B9A11C}|https">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Catalog PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Repositories/IInMemItemsRepository.cs">
     <Files>
-      <File FileName="Repositories/IInMemItemsRepository.cs" Line="17" Column="2" />
-      <File FileName="Repositories/MongoDbItemsRepository.cs" Line="43" Column="16" />
+      <File FileName="Repositories/IInMemItemsRepository.cs" Line="8" Column="32" />
+      <File FileName="Repositories/MongoDbItemsRepository.cs" Line="11" Column="18" />
+      <File FileName="Repositories/InMemItemsRepository.cs" Line="1" Column="1" />
+      <File FileName="Extensions.cs" Line="1" Column="1" />
+      <File FileName="Dtos/CreateItemDto.cs" Line="1" Column="1" />
+      <File FileName="Dtos/ItemDto.cs" Line="1" Column="1" />
+      <File FileName="Dtos/UpdateItemDto.cs" Line="10" Column="19" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="appsettings.Development.json" Line="15" Column="1" />
+      <File FileName="Settings/MongoDbSettings.cs" Line="16" Column="10" />
+      <File FileName="Program.cs" Line="40" Column="1" />
+      <File FileName="Entities/Item.cs" Line="1" Column="1" />
+      <File FileName="Controllers/ItemsController.cs" Line="84" Column="46" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,13 +30,17 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Dtos" expanded="True" />
               <Node name="Entities" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True">
                 <Node name="IInMemItemsRepository.cs" selected="True" />
               </Node>
+              <Node name="Settings" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
