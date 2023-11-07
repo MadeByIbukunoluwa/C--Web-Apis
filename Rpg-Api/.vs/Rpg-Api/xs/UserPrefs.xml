@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{50C1E030-5275-438D-92DD-F1A191087E95}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/CharacterController.cs">
+    <Files>
+      <File FileName="Program.cs" Line="2" Column="1" />
+      <File FileName="Models/Character.cs" Line="23" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="25" Column="1" />
+      <File FileName="Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Rpg-Api" expanded="True">
+            <Node name="Rpg-Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Rpg-Api PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>

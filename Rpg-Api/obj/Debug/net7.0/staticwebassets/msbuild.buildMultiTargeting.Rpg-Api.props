@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Rpg-Api.props" />
+</Project>
