@@ -43,10 +43,35 @@ namespace Rpg_Api.Services.CharacterService
             serviceResponse.Data = _mapper.Map<GetCharacterDto>(character);
             return serviceResponse;
         }
+
+        public async Task<ServiceResponse<GetCharacterDto>> UpdateCharacter(UpdateCharacterDto updatedCharacter)
+        {   
+            var serviceResponse = new ServiceResponse<GetCharacterDto>();
+            try {
+
+                var character = characters.FirstOrDefault(c => c.Id == updatedCharacter.Id);
+                if (character == null) throw new Exception($"Character with Id `{updatedCharacter.Id}` not found");
+                character.Strength = updatedCharacter.Strength;
+                character.Defense = updatedCharacter.Defense;
+                character.Intelligence = updatedCharacter.Intelligence;
+                character.Hitpoints = updatedCharacter.Hitpoints;
+                character.Name = updatedCharacter.Name;
+
+                serviceResponse.Data = _mapper.Map<GetCharacterDto>(character);
+
+                return serviceResponse;
+            } catch (Exception ex) {
+                serviceResponse.Success = false;
+                serviceResponse.Message = ex.Message;
+            }
+            return serviceResponse;
+        }
     }
 }
 
 
 // when my applciation launches i get localhost not found on the root locahost, but when i add the swagger route i get redirected , okay , then lets make the swagger route the root route, abi?
 
-// it doesnt happen when i use dotnet wacth run sha 
+// it doesnt happen when i use dotnet watch run sha 
+
+
